@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Random Number Game</title>
+    <link href="./style/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form action="" method="POST">
+      <h1 class="title">Adivina el número</h1>
+      <div class="wrapper-number">
+        <label for="number">Introduce aquí tu número:</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          class="js-user-number"
+          value=""
+        />
+      </div>
+      <div class="btns-container">
+        <button
+          id="number-button"
+          class="btn number-button js-number-button"
+          type="button"
+        >
+          Prueba</button
+        ><button
+          id="reset-button"
+          class="btn reset-button js-reset-button"
+          type="button"
+          disabled
+        >
+          Reset
+        </button>
+      </div>
+
+      <div class="square js-hint"></div>
+      <div class="square js-attemps"></div>
+    </form>
+    <footer class="footer">
+      <span class="copy">&copy; BbeatrizSI</span>
+    </footer>
+    <script src="./js/main.js" type="text/javascript"></script>
+  </body>
+</html>

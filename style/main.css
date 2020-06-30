@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, aquamarine, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.title {
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+.wrapper-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 75px;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.32);
+  cursor: pointer;
+  height: 42px;
+}
+
+.number-button {
+  background: #a700c9;
+  width: 30%;
+  transition: all 0.2s ease-in-out;
+}
+
+.number-button:hover {
+  transform: translate(0px, -2px);
+}
+
+.reset-button {
+  background-color: rgb(179, 105, 197);
+  width: 25%;
+  transition: all 0.2s ease-out;
+}
+
+.reset-button:hover {
+  border: #f183ff solid 3px;
+}
+
+.btn-disabled {
+  background: #431b4b;
+  color: lightgrey;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-disabled:hover {
+  transform: none;
+}
+
+input {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  font-size: 36px;
+}
+
+form {
+  background-color: rgb(72, 151, 133);
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-left: 35px;
+  align-self: flex-start;
+}
+
+.square {
+  border: 2px solid rgb(156, 218, 199);
+  color: white;
+  margin-top: 10px;
+  line-height: 30px;
+  font-size: 16px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.32);
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+.winner {
+  font-size: 18px;
+  font-weight: 700;
+  color: greenyellow;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  padding: 15px;
+  position: fixed;
+  bottom: 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.copy {
+  font-family: monotype;
+  margin-top: auto;
+  display: inline-block;
+  color: #45c8b2;
+  grid-column: 4/5;
+}
