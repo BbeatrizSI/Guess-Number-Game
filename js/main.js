@@ -21,13 +21,8 @@ function getRandomNumber(max) {
 let randomNumber = getRandomNumber(100);
 console.log(`Mi número aleatorio es: ${randomNumber}`);
 
-//FUNCTIONS
 
-function resolveGame(ev) {
-  ev.preventDefault();
-  countAttemps();
-  getHint();
-}
+//FUNCTIONS
 
 // counter
 function countAttemps() {
@@ -55,11 +50,19 @@ function getHint() {
   }
 }
 
+// resolve game
+function resolveGame(ev) {
+  ev.preventDefault();
+  countAttemps();
+  getHint();
+}
+
 // reset game
 function resetGame() {
   location.reload();
   userNumber.value = "";
 }
+
 
 //LISTENERS
 buttonNumber.addEventListener("click", resolveGame);
