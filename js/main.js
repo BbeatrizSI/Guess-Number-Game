@@ -24,18 +24,19 @@ console.log(`Mi número aleatorio es: ${randomNumber}`);
 //FUNCTIONS
 
 function resolveGame(ev) {
-  countAttemps(ev);
-  getHint(ev);
+  ev.preventDefault();
+  countAttemps();
+  getHint();
 }
 
 // counter
-function countAttemps(ev) {
+function countAttemps() {
   attemps += 1;
   attempsInfo.innerHTML = "Número de intentos:" + attemps;
 }
 
 // hint
-function getHint(ev) {
+function getHint() {
   const userNumber = parseInt(input.value);
   if (userNumber > 100 || userNumber < 1) {
     hint.innerHTML = "Pista: " + "El número debe estar entre 1 y 100";
@@ -55,7 +56,7 @@ function getHint(ev) {
 }
 
 // reset game
-function resetGame(ev) {
+function resetGame() {
   location.reload();
   userNumber.value = "";
 }
